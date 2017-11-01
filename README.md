@@ -4,13 +4,15 @@ A collection of geoscience based sampling tools.
 
 ## Environment 
 
-R 3.4 (later versions should be fine)
+* R 3.4 (later versions should be fine)
 
 ## Requirements
 
 Required packages will be installed automatically, if not found. Nevertheless, run this command in R to install prerequisites:
 <br>
+```R
 install.packages(c("raster","clhs","rgdal","moments","rgeos","BalancedSampling"))
+```
 <br>
 Also, see Run_NCI.sh for NCI support.
 
@@ -21,13 +23,15 @@ Configurations are stored in "Run_Scripts.R" file. So, first make your changes (
 Currently the following functionalities are supported:
 
 To see a demo of extracting raster cells that are touched by a road, run
-
+```R
 source("WHERE YOU HAVE STORED THIS REPOSITORY/geo-sampling/Extract_demo_ex1.R", chdir = TRUE)
+```
 <br> <br>
   
 To see a demo of extracting raster cells that are located within a margin around roads, run
-
+```R
 source("WHERE YOU HAVE STORED THIS REPOSITORY/geo-sampling/Extract_demo_ex2.R", chdir = TRUE)
+```
 <br> <br>
 
 <a href="http://www.sciencedirect.com/science/article/pii/S009830040500292X"> conditioned Latin Hypercube Sampling (cLHS) </a>
